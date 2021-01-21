@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@android:color/white"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:id="@+id/layoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/logoLogin"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:contentDescription="Logo Aplikasi" />
+
+            <EditText
+                android:id="@+id/usernameSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logoLogin"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_et_signup"
+                android:filterTouchesWhenObscured="true"
+                android:hint="Username"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/et_signup_hint"
+                android:textSize="15sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/passwordSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usernameSignIn"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_et_signup"
+                android:filterTouchesWhenObscured="true"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/et_signup_hint"
+                android:textSize="15sp"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/passwordSignIn"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/background_button_login"
+                android:fontFamily="sans-serif-light"
+                android:text="MASUK"
+                android:elevation="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/divide1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/buttonLogin"
+                android:layout_marginTop="35dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textAkun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divide1"
+                android:layout_margin="8dp"
+                android:text="Belum Punya Akun?"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/textAkun"
+                android:layout_centerInParent="true"
+                android:elevation="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_button_maudaftar"
+                android:fontFamily="sans-serif-light"
+                android:text="MASUK"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/layoutDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/backlogin"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DAFTAR"
+                android:textAlignment="center"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nmLengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background_et_signup"
+                android:filterTouchesWhenObscured="true"
+                android:hint="Nama Lengkap"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/et_signup_hint"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/usernameSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_et_signup"
+                android:filterTouchesWhenObscured="true"
+                android:hint="Username"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/et_signup_hint"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/passwordSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_et_signup"
+                android:filterTouchesWhenObscured="true"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/et_signup_hint"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/emailSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_et_signup"
+                android:filterTouchesWhenObscured="true"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/et_signup_hint"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/tlpSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_et_signup"
+                android:filterTouchesWhenObscured="true"
+                android:hint="Nomor Telepon"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/et_signup_hint"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/alamatSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_et_signup"
+                android:filterTouchesWhenObscured="true"
+                android:hint="Alamat"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/et_signup_hint"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/buttonMauDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/background_button_daftar"
+                android:fontFamily="sans-serif-light"
+                android:elevation="5dp"
+                android:text="Daftar"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
